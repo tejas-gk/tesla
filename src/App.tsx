@@ -51,12 +51,14 @@ const images = [
   }
 ]
 function App() {
+ 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
+      <div className="snap snap-x snap-mandatory">
       {
         images.map((image) => (
-          <div key={image.id}>
+          <div key={image.id} className='snap-mandatory snap-center relative'>
           <Slides
             image={image.src}
             text={image.txt}
@@ -65,7 +67,8 @@ function App() {
             </div>
             
         ))
-      }
+        }
+        </div>
     </div>
   )
 }

@@ -12,7 +12,7 @@ export default function Slides({
     primary_txt
 }: SlidesProps): JSX.Element {
     return (
-        <div className="flex  items-center">
+        <div className="flex items-center">
           
                 <img
                     src={image}
@@ -24,7 +24,7 @@ export default function Slides({
             <Buttons
                 text='shop now'
                 isPrimary={true}
-                className="mr-4 px-4
+                className="mr-4 px-4 
                 "
             />
             <Buttons
