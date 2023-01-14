@@ -14,7 +14,7 @@ export default function Buttons({
         <button
             className={`button ${
                 isPrimary ? 'bg-[#171a20] opacity-80  text-white ' : 'text-[#393c41] bg-white opacity-[65%]'
-          } font-sm text-center leading-[16.8px] h-12 w-fit font-semibold px-4
+          } text-md text-center leading-[16.8px] h-12 w-fit font-semibold px-4 capitalize
           ${className}
             `}
       >

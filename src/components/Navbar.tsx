@@ -29,7 +29,7 @@ const models = [
 
 export default function Navbar() {
   return (
-      <div className='fixed top-0 left-0 w-full h-16 bg-transparent flex items-center justify-between px-4
+      <div className='fixed top-0 left-0 w-full h-16 bg-transparent flex items-center justify-between px-4 z-10
       '>
           <span className='left text-white text-2xl font-semibold'>
                 <img src='/assets/assets/asset 12.svg' alt="logo" className='h-24 w-24'/>
