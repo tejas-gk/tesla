@@ -1,4 +1,5 @@
 import Buttons from './components/Buttons'
+import Navbar from './components/Navbar'
 import Slides from './components/Slides'
 // import './assets/assets'
 const images = [
@@ -38,7 +39,7 @@ const images = [
   },
   {
     id: 6,
-    src: './assets/assets/asset 5.jpeg',
+    src: './assets/assets/asset 5.webp',
     txt:'Existing inventory',
     primary_txt: 'Shop now'
   },
@@ -52,6 +53,7 @@ const images = [
 function App() {
   return (
     <div>
+      <Navbar/>
       {
         images.map((image) => (
           <div key={image.id}>

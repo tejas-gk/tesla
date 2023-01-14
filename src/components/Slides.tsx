@@ -2,7 +2,7 @@ import React from 'react'
 import Buttons from './Buttons'
 
 interface SlidesProps {
-    image: string,
+    image?: string,
     text: string,
     primary_txt: string
 }
