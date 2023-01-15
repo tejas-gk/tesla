@@ -16,9 +16,9 @@ export default function Slides({
     desc
 }: SlidesProps): JSX.Element {
     return (
-        <section className="flex items-center snap-start">
+        <section className="flex items-center snap-start justify-between">
             <div className="absolute top-[14%] left-1/2 transform -translate-x-1/2 -translate-y-3/2">
-                <h1 className="text-[#393c41] text-5xl font-bold text-center mb-4 capitalize">
+                <h1 className="text-[#393c41] text-5xl font-semibold text-center mb-4 capitalize">
                    {heading}
                 </h1>
                 <p className="text-[#393c41] text-center text-md font-medium capitalize
@@ -34,7 +34,8 @@ export default function Slides({
                     className="h-screen w-screen object-cover"
                 />
             <div className="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="text-center flex lg:flex-row mb-12 flex-col justify-center items-center gap-4 lg:gap-0">
+                <div className="text-center flex lg:flex-row mb-12 flex-col justify-center items-center gap-4 lg:gap-0">
+                
             <Buttons
                 text={primary_txt}
                 isPrimary={true}
