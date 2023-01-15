@@ -34,7 +34,7 @@ export default function Navbar() {
           <span className='left text-white text-2xl font-semibold'>
                 <img src='/assets/assets/asset 12.svg' alt="logo" className='h-24 w-24'/>
           </span>
-          <div className='center flex flex-row items-center gap-4 justify-center mx-auto'>
+          <div className='center flex flex-row items-center gap-10 justify-center mx-auto'>
               {
                   models.map((model) => (
                       <div key={model.id}>
@@ -44,9 +44,9 @@ export default function Navbar() {
             }  
           </div>
 
-          <div className='right flex flex-row items-center gap-4'>
+          <div className='right flex flex-row items-center gap-6'>
               <p className='text-black text-md font-semibold'>Shop</p>
-              <p className='text-black text-md font-semibold'>Tesla Account</p>
+              <p className='text-black text-md font-semibold'>Account</p>
                 <button className='px-4 py-2 rounded-md'>Menu</button>
           </div>
     </div>

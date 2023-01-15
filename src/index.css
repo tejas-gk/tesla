@@ -4,6 +4,7 @@
 
 *{
   font-family:"Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  src: url('assets/font/gotham-book_4tNLE/GothamSSm Book.otf');
 }
 
 .button{
@@ -12,6 +13,3 @@
   
 }
 
-.debug{
-  border:2px solid red;
-}
