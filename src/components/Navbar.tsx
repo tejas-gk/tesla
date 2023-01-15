@@ -34,11 +34,11 @@ export default function Navbar() {
           <span className='left text-white text-2xl font-semibold'>
                 <img src='/assets/assets/asset 12.svg' alt="logo" className='h-24 w-24'/>
           </span>
-          <div className='center flex flex-row items-center gap-7 translate-x-20'>
+          <div className='center flex flex-row items-center gap-7 translate-x-20 '>
               {
                   models.map((model) => (
-                      <div key={model.id}>
-                          <p className='text-black text-md font-semibold'>{model.model}</p>
+                      <div key={model.id} className='hover:opacity-75 transition-opacity hover:bg-gray-500'>
+                          <button className='text-black text-md font-semibold'>{model.model}</button>
                       </div>
                     ))
             }  
