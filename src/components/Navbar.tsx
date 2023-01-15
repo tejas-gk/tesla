@@ -28,6 +28,7 @@ const models = [
 ]
 
 export default function Navbar() {
+    const [hovered, setHovered] = useState(null);
     return (
         <>
             <div className="hidden lg:block">
@@ -40,7 +41,13 @@ export default function Navbar() {
           <div className='center flex flex-row items-center gap-7 translate-x-20 '>
               {
                   models.map((model) => (
-                      <div key={model.id} className='rounded-md  hover:opacity-[50%] transition-opacity hover:bg-gray-300 '>
+                      <div key={model.id} className={`rounded-md  hover:bg-opacity-10  hover:bg-[#181b21] 
+                      transition-all mx-[0.3rem] px-[0.8rem] ${hovered === model.id ? 'bg-opacity-10 bg-[#181b21]' : ''}
+                      `}
+                          // @ts-ignore
+                          onMouseEnter={() => setHovered(model.id)}
+                            onMouseLeave={() => setHovered(null)}
+                      >
                           <button className='text-black text-md font-semibold  px-1 py-2'>{model.model}</button>
                       </div>
                     ))
