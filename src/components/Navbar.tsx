@@ -28,7 +28,9 @@ const models = [
 ]
 
 export default function Navbar() {
-  return (
+    return (
+        <>
+            <div className="hidden lg:block">
       <div className='fixed top-0 left-0 w-full h-16 bg-transparent flex items-center justify-between px-4 z-10
       '>
           <span className='left text-white text-2xl font-semibold'>
@@ -38,7 +40,7 @@ export default function Navbar() {
           <div className='center flex flex-row items-center gap-7 translate-x-20 '>
               {
                   models.map((model) => (
-                      <div key={model.id} className='rounded-md  hover:opacity-75 transition-opacity hover:bg-gray-300'>
+                      <div key={model.id} className='rounded-md  hover:opacity-[50%] transition-opacity hover:bg-gray-300 '>
                           <button className='text-black text-md font-semibold  px-1 py-2'>{model.model}</button>
                       </div>
                     ))
@@ -47,10 +49,25 @@ export default function Navbar() {
           </div>
 
           <div className='right flex flex-row items-center gap-6 '>
-              <p className='rounded-md text-black text-md font-semibold px-1 py-2 hover:opacity-75 transition-opacity hover:bg-gray-300'>Shop</p>
+              <p className='rounded-md text-black text-md font-semibold px-1 py-2 hover:opacity-75 transition-opacity
+               hover:bg-gray-300'>Shop</p>
               <p className='rounded-md text-black text-md font-semibold px-1 py-2 hover:opacity-75 transition-opacity hover:bg-gray-300'>Account</p>
                 <button className='text-black text-md font-semibold px-1 py-2 rounded-md hover:opacity-75 transition-opacity hover:bg-gray-300'>Menu</button>
           </div>
-    </div>
+                </div>
+            </div>
+            
+            <div className='block lg:hidden'>
+                <div className='fixed top-0 left-0 w-full h-16 bg-transparent flex items-center justify-between px-4 z-10'>
+                    <span className='left text-white text-2xl font-semibold'>
+                        <img src='/assets/assets/asset 12.svg' alt="logo" className='h-24 w-24' />
+                    </span>
+                    <div className='right flex flex-row items-center gap-6'>
+                        <button className='text-black text-md font-semibold px-1 py-2 rounded-md hover:opacity-75 transition-opacity hover:bg-gray-300'>Menu</button>
+                    </div>
+                </div>
+            </div>
+            
+        </>
   )
 }
