@@ -1,12 +1,13 @@
 import Navbar from './components/Navbar'
 import Slides from './components/Slides'
+import React, { useState,useEffect } from 'react';
 const images = [
   {
     id: 1,
     src: './assets/assets/asset 0.jpeg',
     txt: 'Existing inventory',
     primary_txt: 'Custom order',
-    heading: 'model s',
+    heading: 'model y',
     desc:'Schedule a Demo Drive'
   },
   {
@@ -51,7 +52,7 @@ const images = [
     txt:'Existing inventory',
     primary_txt: 'order now',
     heading: 'Solar Roof',
-      dec:'Produce Clean Energy From Your Roof'
+    desc:'Produce Clean Energy From Your Roof'
   },
   {
     id: 7,
@@ -62,18 +63,11 @@ const images = [
   }
 ]
 function App() {
- 
   return (
     <div>
-      <div className="h-auto text-center debug bg-white  py-3
-      ">
-        Until March 2023, certain new Model 3 and Model Y vehicles qualify for a $7,500 federal tax credit for eligible buyers.
-        <span className='underline underline-offset-2  hover:underline-thickness-8
-       '>Learn More</span>
-      </div>
-
+        
         <Navbar />
-      <div className="snap snap-y snap-mandatory">
+      <div className="snap-y snap-mandatory overflow-y-scroll overflow-x-hidden w-screen h-screen">
       {
         images.map((image) => (
           <div key={image.id} className='relative snap-start
