@@ -76,7 +76,8 @@ function App() {
       <div className="snap snap-y snap-mandatory">
       {
         images.map((image) => (
-          <div key={image.id} className=' relative'>
+          <div key={image.id} className='relative snap-start
+          '>
           <Slides
             image={image.src}
             text={image.txt}
