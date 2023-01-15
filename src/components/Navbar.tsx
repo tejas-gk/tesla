@@ -34,20 +34,22 @@ export default function Navbar() {
           <span className='left text-white text-2xl font-semibold'>
                 <img src='/assets/assets/asset 12.svg' alt="logo" className='h-24 w-24'/>
           </span>
+          <div className="relative">
           <div className='center flex flex-row items-center gap-7 translate-x-20 '>
               {
                   models.map((model) => (
-                      <div key={model.id} className='hover:opacity-75 transition-opacity hover:bg-gray-500'>
-                          <button className='text-black text-md font-semibold'>{model.model}</button>
+                      <div key={model.id} className='rounded-md  hover:opacity-75 transition-opacity hover:bg-gray-300'>
+                          <button className='text-black text-md font-semibold  px-1 py-2'>{model.model}</button>
                       </div>
                     ))
             }  
           </div>
+          </div>
 
-          <div className='right flex flex-row items-center gap-6'>
-              <p className='text-black text-md font-semibold'>Shop</p>
-              <p className='text-black text-md font-semibold'>Account</p>
-                <button className='text-black text-md font-semibold px-4 py-2 rounded-md'>Menu</button>
+          <div className='right flex flex-row items-center gap-6 '>
+              <p className='rounded-md text-black text-md font-semibold px-1 py-2 hover:opacity-75 transition-opacity hover:bg-gray-300'>Shop</p>
+              <p className='rounded-md text-black text-md font-semibold px-1 py-2 hover:opacity-75 transition-opacity hover:bg-gray-300'>Account</p>
+                <button className='text-black text-md font-semibold px-1 py-2 rounded-md hover:opacity-75 transition-opacity hover:bg-gray-300'>Menu</button>
           </div>
     </div>
   )
