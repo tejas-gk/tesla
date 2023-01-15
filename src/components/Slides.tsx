@@ -34,17 +34,17 @@ export default function Slides({
                     className="h-screen w-screen object-cover"
                 />
             <div className="absolute top-[85%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="text-center flex flex-row mb-12">
+            <div className="text-center flex lg:flex-row mb-12 flex-col justify-center items-center gap-4 lg:gap-0">
             <Buttons
                 text={primary_txt}
                 isPrimary={true}
-                className="mr-4 px-4 lg:w-[256px] h-[40px] w-96 max-w-[768px] user-select-none
+                className="lg:mr-4 lg:px-4 lg:w-[256px] h-[40px] w-96 max-w-[768px] user-select-none
                 "
             />
             <Buttons
                 text={text}
                 isPrimary={false}
-                className="ml-4 px-10 lg:w-[256px] h-[40px] w-96 max-w-[768px] user-select-none
+                className="lg:ml-4 lg:px-10 lg:w-[256px] h-[40px] w-96 max-w-[768px] user-select-none 
                 "
                 />
             </div>

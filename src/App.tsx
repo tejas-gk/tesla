@@ -1,7 +1,5 @@
-import Buttons from './components/Buttons'
 import Navbar from './components/Navbar'
 import Slides from './components/Slides'
-// import './assets/assets'
 const images = [
   {
     id: 1,
@@ -59,7 +57,7 @@ const images = [
     id: 7,
     src: './assets/assets/asset 6.jpeg',
     txt:'Existing inventory',
-    primary_txt: 'order now',
+    primary_txt: 'shop now',
     heading: 'Accessories'
   }
 ]
@@ -67,7 +65,14 @@ function App() {
  
   return (
     <div>
-      <Navbar />
+      <div className="h-auto text-center debug bg-white  py-3
+      ">
+        Until March 2023, certain new Model 3 and Model Y vehicles qualify for a $7,500 federal tax credit for eligible buyers.
+        <span className='underline underline-offset-2  hover:underline-thickness-8
+       '>Learn More</span>
+      </div>
+
+        <Navbar />
       <div className="snap snap-y snap-mandatory">
       {
         images.map((image) => (
@@ -78,7 +83,6 @@ function App() {
               primary_txt={image.primary_txt}
               heading={image.heading}
               desc={image.desc}
-              
             />
             </div>
             
