@@ -59,7 +59,6 @@ const images = [
     src: './assets/assets/asset 6.jpeg',
     txt:'Existing inventory',
     primary_txt: 'shop now',
-    heading: 'Accessories'
   }
 ]
 function App() {
